@@ -7,7 +7,6 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var sass = require('gulp-ruby-sass');
 var express = require('express');
-var browserify = require('browserify');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
 
