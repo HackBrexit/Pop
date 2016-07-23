@@ -2,6 +2,9 @@
 
 ## Tolerance and Prejudice - Hacking Brexit at Thoughtworks
 
+
+![Hack Brexit](/images/2016/07/HackBrexit.png)
+
 # What is the problem?
 - People are divided, not talking to each other
 - Only talking in their comfort zone
