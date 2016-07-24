@@ -1,11 +1,12 @@
 <div class="home-content">
-  <style> .chat {
-    position: absolute;
-    }</style>
-
   <section class="hero-content">
     <h3 class="first-text">We are talking more than ever but we are not speaking to each other</h3>
     <h3 class="second-text">Post brexit we need to learn to listen to one another</h3>
+    <% if user_signed_in? %>
+    <div class="chat-content">
+    <%= image_tag("chat_page.png", width: '540', height: '384', alt: 'chat', class: "chat") %>
+    </div>
+    <% end %>
   </section>
   <section class="home-info">
     <img src="./screenshot1.png"></img>
@@ -14,8 +15,8 @@
   </section>
   <section class="home-hook">
   </section>
+
 <% if user_signed_in? %>
-<%= image_tag("chat_page.png", width: '1080', height: '768', alt: 'chat', class: "chat") %>
   <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
 <% else %>
     <%= link_to "Sign in", new_user_session_path %>
