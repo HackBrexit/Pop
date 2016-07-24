@@ -1,4 +1,12 @@
-<h1>POP</h1>
+<div class="home-content">
+
+  <section class="hero-content">
+    <!-- <h1> Hero content</h1>  -->
+  </section>
+  <section class="home-info">
+  </section>
+  <section class="home-hook">
+  </section>
 <% if user_signed_in? %>
 <button type="button">Popmy bubble</button>
   <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
@@ -6,3 +14,4 @@
     <%= link_to "Sign in", new_user_session_path %>
     <%= link_to "Sign up", new_user_registration_path %>
 <% end %>
+</div>
