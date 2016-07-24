@@ -1,4 +1,7 @@
 <div class="home-content">
+  <style> .chat {
+    position: absolute;
+    }</style>
 
   <section class="hero-content">
     <!-- <h1> Hero content</h1>  -->
@@ -8,7 +11,7 @@
   <section class="home-hook">
   </section>
 <% if user_signed_in? %>
-<button type="button">Popmy bubble</button>
+<%= image_tag("chat_page.png", width: '1080', height: '768', alt: 'chat', class: "chat") %>
   <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
 <% else %>
     <%= link_to "Sign in", new_user_session_path %>
